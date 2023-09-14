@@ -3,23 +3,6 @@
 # DESCRIPTION
 - This simple shell project, also known as a command-line shell/a terminal shell, is a program that provides a user interface for interacting with an operating system. It allows users to execute commands and run programs by typing them as text input.
 - Its main goal is to replicate the basic functionality of a traditional shell, suchas the Unix shell (e.g. Bash) or the Windows Command Prompt.
-- Its allowed functions and system calls are: 
-・read
-・write
-・open
-・execve
-・exit
-・fflush
-・fork
-・free
-・malloc
-・getline
-・isatty
-・perror
-・strtok
-・wait
-・waitpid
-・etc....
 - In conclusion, this simple shell will provide a user-friendly interface for interacting with an operating system, allowing users to execute commands, run programs, and automate tasks efficiently. It also serves as a fundamental building block for more advanced shell implementations and provides a deeper understanding of how command-line interfaces work.
 
 # KEY COMPONENTS AND FEATURES:
@@ -38,6 +21,39 @@
 5. Command Completion: Many shells provide command completion functionality. As you type a command or a file path, you can press the Tab key to auto-complete it based on the available options. This helps to reduce typing and avoid errors.
 6. Command History: Shells often keep track of the commands you have entered. You can navigate through the command history using arrow keys or specific commands, such as the `history` command. This allows you to reuse or modify previously executed commands.
 7. Exiting the Shell: To exit the shell, you can use the `exit` comand or press Ctrl + D (Unix-like systems) pr Ctril + Z (Windows). This will terminate the shell and return you to the previous environment.
+
+# ALLOWED FUNCTIONS:
+• `access`(man 2 access)
+• `chdir`(man 2 chdir)
+• `close`(man 2 close)
+• `closedir`(man 3 closedir)
+• `execve`(man 2 execve)
+• `exit`(man 3 exit)
+• `_exit`(man 2 exit)
+• `fflush`(man 3 fflush)
+• `fork`(man 2 fork)
+• `free`(man 3 free)
+• `getcwd`(man 3 getcwd)
+• `getline`(man 3 getline)
+• `getpid`(man 2 getpid)
+• `isatty`(man 3 isatty)
+• `kill`(man 2 kill)
+• `malloc`(man 3 malloc)
+• `open`(man 2 open)
+• `opendir`(man 3 opendir)
+• `perror`(man 3 perror)
+• `read`(man 2 read)
+• `readdir`(man 3 readdir)
+• `signal`(man 2 signal)
+• `stat`(xstat)(man 2 stat)
+• `lstat`(lxstat)(man 2 lstat)
+• `fstat`(fstat)(man 2 fstat)
+• `strtok`(man 3 strtok)
+• `wait`(man 2 wait)
+• `waitpid`(man 2 waitpid)
+• `wait3`(man 2 wait3)
+• `wait4`(man 2 wait4)
+• `write`(man 2 write)
 
 # ACKNOWLEDGE
 ・ALX Community
