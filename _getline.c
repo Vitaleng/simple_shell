@@ -19,7 +19,8 @@ int _getline(data_of_program *data)
 
 	/* checks if does not exist more commands in the array */
 	/* and checks the logical operators */
-	if (!array_commands[0] || (array_operators[0] == '&' && errno != 0) || (array_operators[0] == '|' && errno == 0))
+	if (!array_commands[0] || (array_operators[0] == '&' && errno != 0) || 
+			(array_operators[0] == '|' && errno == 0))
 	{
 		/* free the memory allocated in the array if it exists */
 		for (i = 0; array_commands[i]; i++)
@@ -29,7 +30,7 @@ int _getline(data_of_program *data)
 		}
 
 		/* read from the file descriptor int to buff */
-		bytes_read = read(data->file_descriptor, &buff, BUFFER_SIZE -1);
+		bytes_read = read(data->file_descriptor, &buff, BUFFER_SIZE - 1);
 		if (bytes_read == 0)
 			return (-1);
 
