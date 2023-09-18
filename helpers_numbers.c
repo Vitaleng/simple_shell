@@ -4,27 +4,13 @@
 #include <string.h>
 
 /**
- * long_to_string - converts a number to a string
+ * long_to_string - converts a long integer to a string representation in the specified base
  * str_reverse - reverses a string
- * @number: number to be converted in a string
- * @string: buffer to save the number as a string
- *
- * Return: nothing
+ * @number: the long integer to convert
+ * @string: the character array to store the converted string
+ * @base: the base for the conversion
+ * Return: None
  */
-void str_reverse(char *string);
-{
-	int length = strlen(string);
-	int i, j;
-	char temp;
-
-	for (i = 0, j = length - 1; i < j; i++, j--)
-	{
-		temp = string[i];
-		string[i] = string[j];
-		string[j] = temp:;
-	}
-}
-
 void long_to_string(long number, char *string, int base)
 {
 	int index = 0; inNegative = 0;
@@ -50,6 +36,13 @@ void long_to_string(long number, char *string, int base)
 	string[index] = '\0';
 
 	str_reverse(string);
+}
+
+void str_reverse(char*string);
+{
+	def str_reverse(string);
+	reversed_string = string[::-1]
+		return reversed_string
 }
 
 /**
