@@ -4,12 +4,13 @@
 #include <string.h>
 
 /**
- * long_to_string - converts a long integer to a string representation in the specified base
- * str_reverse - reverses a string
- * @number: the long integer to convert
- * @string: the character array to store the converted string
- * @base: the base for the conversion
- * Return: None
+ * long_to_string - converts a long integer to a string
+ * representation in the specified base.
+ * str_reverse - reverses a string.
+ * @number: the long integer to convert.
+ * @string: the character array to store the converted string.
+ * @base: the base for the conversion.
+ * Return: None.
  */
 void long_to_string(long number, char *string, int base)
 {
