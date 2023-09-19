@@ -3,20 +3,11 @@
 #include <errno.h>
 #include <string.h>
 
-typedef struct data_of_program
-data_of_program;
-
 ssize_t str_length(const char *string);
 void long_to_string(long num, char *str, int base);
 int _print(char *string);
 int _printe(char *string);
 int _print_error(int errorcode, data_of_program *data);
-
-typedef struct data_of_program {
-	int exec_counter;
-	char *program_name;
-	char **tokens;
-} data_of_program;
 
 /**
  * str_length - returns the length of a string
@@ -25,7 +16,7 @@ typedef struct data_of_program {
  */
 ssize_t str_length(const char *string)
 {
-	return strlen(string);
+	return (strlen(string));
 }
 
 /**
@@ -39,7 +30,6 @@ void long_to_string(long num, char *str, int base)
 {
 	/* Implementation of long_to_string */
 }
-
 /** 
  * _print - writes a array of chars in the standard output
  * @string: pointer to the array of chars
