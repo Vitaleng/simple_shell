@@ -22,7 +22,7 @@ ssize_t str_length(const char *string)
 /**
  * long_to_string - converts a long number to a string
  * @num: the input number
- * str: the output string
+ * @str: the output string
  * @base: the base for conversion
  * Return: None
  */
@@ -30,7 +30,8 @@ void long_to_string(long num, char *str, int base)
 {
 	/* Implementation of long_to_string */
 }
-/** 
+
+/* 
  * _print - writes a array of chars in the standard output
  * @string: pointer to the array of chars
  * Return: the number of bytes written
@@ -68,7 +69,7 @@ int _print_error(int errorcode, data_of_program *data)
 	if (errorcode == 2 || errorcode == 3)
 	{
 		_printe(data->program_name);
-		-printe(": ");
+		_printe(": ");
 		_printe(n_as_string);
 		_printe(": ");
 		_printe(data->tokens[0]);
@@ -81,7 +82,7 @@ int _print_error(int errorcode, data_of_program *data)
 	}
 	else if (errorcode == 127)
 	{
-		-printe(data->program_name);
+		_printe(data->program_name);
 		_printe(": ");
 		_printe(n_as_string);
 		_printe(": ");
