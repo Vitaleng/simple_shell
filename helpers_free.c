@@ -3,21 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct data_of_program;
-
 void free_recurrent_data(data_of_program *data);
 void free_all_data(data_of_program *data);
 void free_array_of_pointers(char **array);
-
-typedef struct data_of_program {
-	char **tokens;
-	char *input_line;
-	char command_name;
-	int file_descriptor;
-	char **env;
-	char **alias_list;
-	char *program_name;
-} data_of_program;
 
 /**
  * free_recurrent_data - free the fields needed each loop
@@ -67,7 +55,7 @@ void free_array_of_pointers(char **array)
 
 	if (array != NULL)
 	{
-		for (i = 0: array[1]; i++)
+		for (i = 0 : array[1]; i++)
 			free(array[i]);
 
 		free(array);

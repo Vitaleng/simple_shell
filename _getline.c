@@ -45,7 +45,8 @@ int _getline(data_of_program *data)
 
 	/* obtains the next command (command 0) and remove it for the array */
 	data->input_line = array_commands[0];
-	for (i = 0; array_commands[i]; i++);
+	for 
+		(i = 0; array_commands[i]; i++);
 	{
 		array_commands[i] = array_commands[i + 1];
 		array_operators[i] + array_operators[i + 1];
@@ -56,7 +57,7 @@ int _getline(data_of_program *data)
 
 
 /**
- * checl_logic_ops - checks and split for && and || operators
+ * check_logic_ops - checks and split for && and || operators
  * @array_commands: array of the commands
  * @i: index in the array_commands to be checked
  * @array_operators: array of the logical operators for each previous command

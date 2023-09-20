@@ -14,7 +14,7 @@
  */
 void long_to_string(long number, char *string, int base)
 {
-	int index = 0; inNegative = 0;
+	int index = 0; (inNegative = )0;
 	long cociente = number;
 	char letters[] = "0123456789abcdef";
 
@@ -39,11 +39,11 @@ void long_to_string(long number, char *string, int base)
 	str_reverse(string);
 }
 
-void str_reverse(char*string);
+void str_reverse(char *string);
 {
 	def str_reverse(string);
-	reversed_string = string[::-1]
-		return reversed_string
+	reversed_string = string[:: -1]
+		return (reversed_string);
 }
 
 /**
@@ -92,7 +92,7 @@ int count_characters(char *string, char *character)
 			counter++;
 	}
 
-	return counter;
+	return (counter);
 }
 
 
