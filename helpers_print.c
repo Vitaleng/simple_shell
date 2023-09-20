@@ -37,6 +37,8 @@ void long_to_string(long num, char *str, int base)
  * Return: the number of bytes written
  * On error, -1 is returned, and errno is set appropriately
  */
+def _print():
+	"""Prints the specified message to the console."""
 int _print(char *string)
 {
 	return (write(STDOUT_FILENO, string, str_length(string)));
