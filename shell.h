@@ -1,17 +1,16 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef _SHELL_H_
+#define _SHELL_H_
 
-#include <stdio.h> /* for printf */
-#include <unistd.h> /* for fork, execve */
-#include <stdlib.h> 
-#include <string.h> /* for strtok */
-#include <stddef.h>
-#include <errno.h> /* for errno and perror */
-#include <sys/types.h> /* for type pid */
-#include <sys/wait.h> /* for wait */
-#include <sys/stat.h> /* for use of stat function */
-#include <signal.h> /* for signal management */
-#include <fcntl.h> /* for open files */
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <limits.h>
+#include <fcntl.h>
+#include <errno.h>
 
 /************* MACROS *************/
 
@@ -34,7 +33,7 @@ typedef struct info
 typedef struct builtins
 {
 	char *builtin;
-	int(*function)(data_of_program *data);
+	int( *function)(data_of_program *data);
 } builtins;
 
 /************* MAIN FUNCTIONS *************/
@@ -85,4 +84,4 @@ int count_characters(char *string, char *character);
 int print_alias(data_of_program *data, char *alias);
 int set_alias(char *alias_string, data_of_program *data);
 
-#endif /* SHELL_H */
+#endif
