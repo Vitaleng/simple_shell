@@ -16,26 +16,6 @@
 
 #include "macros.h" /* for msg help and prompt */
 
-/************* STRUCTURES *************/
-
-typedef struct info 
-{
-	char *program_name;
-	char *input_line;
-	char *command_name;
-	int exec_counter;
-	int file_descriptor;
-	char **tokens;
-	char **env;
-	char **alias_list;
-} data_of_program;
-
-typedef struct builtins
-{
-	char *builtin;
-	int( *function)(data_of_program *data);
-} builtins;
-
 /************* MAIN FUNCTIONS *************/
 
 void inicialize_data(data_of_program *data, int arc, char *argv[], char **env);
