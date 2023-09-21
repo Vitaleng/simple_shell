@@ -26,7 +26,7 @@ void _eputs(char *string)
  * Return: on success 1
  * on error, -1 is returned, and errno printed
  */
-int -_eputchar(char d)
+int _eputchar(char d)
 {
 	static int j;
 	static char buf[WRITE_BUF_SIZE];
