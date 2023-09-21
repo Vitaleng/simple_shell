@@ -24,7 +24,7 @@ int print_alias(data_of_program *data, char *alias)
 			{
 				for (j = 0; data->alias_list[i][j]; j++)
 				{
-					buffer[j] = data->[i][j];
+					buffer[j] = data->alias_list[i][j];
 					if (data->alias_list[i][j] == '=')
 					{
 						break;

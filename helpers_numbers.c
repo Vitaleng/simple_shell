@@ -1,6 +1,6 @@
 #include "shell.h"
 #include <stdio.h>
-#include <c.type.h>
+#include <ctype.h>
 #include <string.h>
 
 /**
@@ -14,7 +14,7 @@
  */
 void long_to_string(long number, char *string, int base)
 {
-	int index = 0; (inNegative = )0;
+	int index = 0, inNegative = 0;
 	long cociente = number;
 	char letters[] = "0123456789abcdef";
 
@@ -26,13 +26,16 @@ void long_to_string(long number, char *string, int base)
 
 	while (cociente)
 	{
-		if (cociente < 0)
+		if (number < 0)
 			string[index] = letters[-(number % base)];
+		else
+		string[index] = letters[number % base];
 		cociente /= base;
+		index++;
 	}
 
 	if (inNegative)
-		dtring[index++] = '-';
+		string[index++] = '-';
 
 	string[index] = '\0';
 
