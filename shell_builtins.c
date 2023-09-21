@@ -76,7 +76,7 @@ int print_alias(list_t *node1)
 		_puts("'\n");
 		return (0);
 	}
-	return (1):
+	return (1);
 }
 
 /**
