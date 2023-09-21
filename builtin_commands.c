@@ -75,8 +75,8 @@ int _mycd(info_t *info)
 	       _setenv(info, "OLDPWD=", _getenv(info, "PWD="));
 	       _setenv(info, "PWD", getcwd(buffer, 1024));
 	}
-	       return (0);
-	       }
+	return (0);
+}
 
 /**
  * _myhelp - provides help infomation (not yet implemented)
@@ -86,7 +86,7 @@ int _mycd(info_t *info)
  */
 int _myhelp(info_t *info)
 {
-        char **arg_arr;
+char **arg_arr;
 
 	arg_arr = info->argv;
 	_puts("Function not yet implemented \n");
