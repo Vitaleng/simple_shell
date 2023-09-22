@@ -8,7 +8,7 @@
  *
  * Return: 1 if chain delimiter, 0 otherwise
  */
-int is_chain(ino_t *ino, char *buf, size_t *p)
+int is_chain(ino_t *info, char *buf, size_t *p)
 {
 	size_t y = *p;
 
@@ -103,7 +103,7 @@ int replace_vars(ino_t *info)
 
 		if (!_strcmp(info->argv[t], "$?"))
 		{
-			replace_string(&(info->argv[t]),
+			replace_vars(&(info->argv[t]),
 					_strdup(convert_number(getpid(), 10, 0)));
 			continue;
 		}
