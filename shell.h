@@ -85,7 +85,7 @@ typedef struct passinfo
 	list_t *history;
 	list_t *alias;
 	char **environ;
-	int env_chsnged;
+	int env_changed;
 	int status;
 
 	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory management */
@@ -128,7 +128,7 @@ int loophsh(char **);
 void _eputs(char *);
 int _eputchar(char);
 int _putfd(char c, int fd);
-int -putsfd(char *str, int fd);
+int _putsfd(char *str, int fd);
 
 /* _string1.c */
 int _strlen(char *);
